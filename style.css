@@ -74,7 +74,7 @@ nav li a:hover {
 }
 
 .text-hero p {
-  color: #fff;
+  color: #FFDD00; /* Ubah warna teks slogan di sini */
   font-style: italic;
   font-size: 1.5em;
 }
