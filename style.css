@@ -21,7 +21,7 @@ header {
 .logo a {
   color: white;
   font-size: 1.5em;
-  font-weight: 700;
+  font-family: 'Lobster', cursive;
   text-decoration: none;
   transition: color 0.4s;
 }
@@ -59,6 +59,7 @@ nav li a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 50px 0;
+  background: url('path/to/your/food-image.jpg') no-repeat center center/cover;
 }
 
 .text-hero {
@@ -67,13 +68,15 @@ nav li a:hover {
 }
 
 .text-hero h1 {
-  color: #3652AD;
-  font-size: 3em;
+  color: #FFDD00;
+  font-size: 4em;
+  font-family: 'Lobster', cursive;
 }
 
 .text-hero p {
-  color: #333;
+  color: #fff;
   font-style: italic;
+  font-size: 1.5em;
 }
 
 .text-hero a {
@@ -87,11 +90,6 @@ nav li a:hover {
 
 .text-hero a:hover {
   background-color: #4a69bd;
-}
-
-.img-hero p {
-  font-size: 2em;
-  color: #3652AD;
 }
 
 #about {
@@ -119,12 +117,28 @@ hr {
   border: 1px solid #3652AD;
 }
 
-#product {
+.order-section {
   width: 90%;
   margin: 40px auto;
 }
 
-#product h2 {
+.order-section h2 {
+  text-align: center;
+  color: #3652AD;
+}
+
+.order-categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 45%;
+  margin: 20px 0;
+}
+
+.category h3 {
   text-align: center;
   color: #3652AD;
 }
@@ -184,3 +198,22 @@ hr {
 
 .data-contact {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-contact, .right-contact {
+  width: 45%;
+}
+
+.left-contact h3 {
+  color: #3652AD;
+}
+
+.right-contact p {
+  color: #333;
+}
+
+.right-contact h4 {
+  color: #3652AD;
+}
