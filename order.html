@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Order | Mangan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Mangan</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="food.html">Product</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-section">
+        <h2>Form Order</h2>
+        <hr>
+        <form action="thankyou.html" method="get">
+            <input type="hidden" name="item" value="">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="quantity">Jumlah Order:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            <label for="whatsapp">Nomor WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+            
+            <button type="submit">Order Sekarang</button>
+        </form>
+    </div>
+
+    <script>
+        // Mengambil parameter item dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const item = urlParams.get('item');
+        
+        // Menyimpan item ke dalam input hidden
+        document.querySelector('input[name="item"]').value = item;
+    </script>
+</body>
+</html>
