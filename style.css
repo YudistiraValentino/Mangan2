@@ -2,12 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
+  background: url('BackGround.jpg') no-repeat center center fixed;
+  background-size: cover;
   scroll-behavior: smooth;
 }
 
 header {
-  background-color: #3652AD;
+  background-color: rgba(54, 82, 173, 0.8); /* Semi-transparent header */
   height: 60px;
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@ nav li a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 50px 0;
-  background: url('path/to/your/food-image.jpg') no-repeat center center/cover;
+  background: url('BackGround.jpg') no-repeat center center/cover;
 }
 
 .text-hero {
@@ -97,7 +98,7 @@ nav li a:hover {
   margin: 40px auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -155,7 +156,7 @@ hr {
   width: 250px;
   padding: 20px;
   margin: 10px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -214,66 +215,6 @@ hr {
   color: #333;
 }
 
-
 .right-contact h4 {
   color: #3652AD;
-}
-
-.form-section, .thankyou-section {
-  width: 90%;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.form-section h2, .thankyou-section h2 {
-  color: #3652AD;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-weight: bold;
-  color: #3652AD;
-}
-
-input[type="text"], input[type="number"], input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  color: white;
-  background-color: #3652AD;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #4a69bd;
-}
-
-p {
-  color: #333;
-}
-
-p a {
-  color: #3652AD;
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
 }
